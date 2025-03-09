@@ -1,0 +1,10 @@
+{
+  "domain": "zehnder",
+  "name": "Zehnder Comfoair",
+  "codeowners": ["@Dr-Schobi"],
+  "dependencies": ["mtqq"],
+  "documentation": "https://github.com/Dr-schobi/ha-hacs-comfoair",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": []
+}
