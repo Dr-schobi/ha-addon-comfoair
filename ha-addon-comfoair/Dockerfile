@@ -1,15 +1,17 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-WORKDIR /bin
-RUN git clone https://github.com/jschanz/hacomfoairmqtt.git
-WORKDIR hacomfoairmqtt
 
 
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt install -y socat python3-paho-mqtt==1.6.1 python3-serial python3-yaml
+RUN apt install -y git socat python3-paho-mqtt==1.6.1 python3-serial python3-yaml
+
+WORKDIR /bin
+RUN git clone https://github.com/jschanz/hacomfoairmqtt.git
+WORKDIR hacomfoairmqtt
+
 
 RUN mkdir -p /opt/hacomfoairmqtt
 COPY src/ca350.py /opt/hacomfoairmqtt/ca350.py
