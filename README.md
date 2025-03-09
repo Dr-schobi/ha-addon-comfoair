@@ -1,2 +1,2 @@
-# ha-hacs-comfoair
-experiment to make a HACS for zehnder comfoair
+# ha addon comfoair
+experiment to make a custom homeassistant add-on for zehnder comfoair?
