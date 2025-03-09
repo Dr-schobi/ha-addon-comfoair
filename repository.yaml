@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Dr-schobi Home Assistant add-on repository
+url: 'https://github.com/dm82m/hassio-addons'
+maintainer: Dirk <dirk@maucher-online.de>
